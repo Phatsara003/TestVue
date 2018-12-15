@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>Product List</h1>
-        <b-table striped hover  :items="products" 
+        <h1>Customer List</h1>
+        <b-table striped hover  :items="customers" 
                                 :fields="fields" 
                                 :per-page="pagesize"
                                 :current-page="pageindex"></b-table>
@@ -12,12 +12,12 @@
 import axios from 'axios'
 export default {
     
-     name: 'products',
+     name: 'customers',
  
   data(){
       return{
           message:'ProjectFinal',
-          products:[],
+          customers:[],
           pagesize: 10,
           pageindex: 1,
           fields:[             
@@ -44,10 +44,10 @@ export default {
   mounted(){
       var instace = this
         axios
-      .get('https://intense-ravine-10871.herokuapp.com/api/products')
+      .get('https://polar-refuge-98880.herokuapp.com/api/customers')
       .then(function(response){
           console.log(response.data)
-          instace.products = response.data.data
+          instace.customers = response.data.data
       })
   }
 }

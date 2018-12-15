@@ -6,8 +6,8 @@
   
       <router-link to="/" class="nav-item nav-link active">Home</router-link> |
       <router-link to="/about" class="nav-item nav-link "> About</router-link> |
-      <router-link to="/products" class="nav-item nav-link ">Products</router-link> |
-      <router-link to="/users" class="nav-item nav-link">Users</router-link>
+      <router-link to="/customers" class="nav-item nav-link ">Customers</router-link> 
+      
 
   </div>
   </nav>
