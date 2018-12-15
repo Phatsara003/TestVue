@@ -4,7 +4,7 @@
      
         <b-table striped hover :items="customers" :fields="fields" :per-page="pageSize" :current-page="pageIndex"></b-table>
         
-        <b-pagination size="md" :total-rows="customers.length" :per-page="pageSize" v-model="pageIndex">
+        <b-pagination align="center" size="md" :total-rows="customers.length" :per-page="pageSize" v-model="pageIndex">
         </b-pagination>
     </div>
 </template>
