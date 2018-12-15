@@ -1,11 +1,11 @@
 <template>
     <div>
         <h1>Customer List</h1>
-        <b-table striped hover  :items="customers" 
+        <b-table striped hover  :items="products" 
                                 :fields="fields" 
                                 :per-page="pagesize"
                                 :current-page="pageindex"></b-table>
-         <b-pagination size="md" :total-rows="products.length" v-model="pageindex" :per-page="pagesize"></b-pagination>
+         <b-pagination size="md" :total-rows="pcustomers.length" v-model="pageindex" :per-page="pagesize"></b-pagination>
     </div>
 </template>
 <script>
@@ -27,12 +27,12 @@ export default {
 
               },
               {
-                  key:'title',
+                  key:'name',
                   sortable : true
 
               },
               {
-                  key:'price',
+                  key:'contect',
                   sortable : true,
                   variant:'warning'
 
