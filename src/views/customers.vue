@@ -3,13 +3,13 @@
 
     <div>
         <h1>Customers List</h1>
-     <b-row>
-      <b-col md="6" class="my-1">
-        <b-form-group horizontal label="Filter" class="mb-0">
+     <b-row align="center">
+      <b-col md="10" class="my-5">
+        <b-form-group horizontal label="" class="mb-0">
           <b-input-group>
             <b-form-input v-model="filter" placeholder="Search....." />
             <b-input-group-append>
-              <b-btn :disabled="!filter" @click="filter = ''">Clear</b-btn>
+              <b-btn :disabled="!filter" @click="filter = ''">Search</b-btn>
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
